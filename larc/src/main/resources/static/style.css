@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #eaf3ee;
+    padding: 20px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #39c0c0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 10px;
+}
+
+.contact-text {
+    flex-grow: 1;
+}
+
+.contact-checkbox {
+    margin-left: 10px;
+}
+        
+.main-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.message-area {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: auto;
+    overflow: auto;
+    height: 400px;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.input-area input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #18c96d;
+    border-radius: 8px;
+}
+
+.input-area button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-enviada {
+    background-color: #d4edda;  
+    color: #155724;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: block;  
+    align-items: center;  
+    max-width: 70%; 
+    flex-grow: 0;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.status-icon {
+	width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.status-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.status-icon-tooltip {
+    visibility: hidden;
+    width: 220px;
+    background-color: #d7d9d8;
+    color: #696e6b;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    padding-right: 50px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.status-icon-container:hover .status-icon-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
